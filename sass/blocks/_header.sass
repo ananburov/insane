@@ -1,0 +1,90 @@
+.navbar
+  &-top
+    height: 50px
+    display: flex
+    border-bottom: 1px solid $line-2
+    &__sections
+      min-width: 95px
+      display: flex
+      align-items: center
+      &-text
+        font-size: 14px
+        line-height: 20px
+        font-weight: bold
+        color: $dark
+    &__top-menu
+      display: flex
+      align-items: flex-end
+      flex-grow: 1
+    &__menu-btn
+      display: block
+      width: 18px
+      height: 14px
+      margin-right: 15px
+      position: relative
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &-line
+        position: absolute
+        display: block
+        top: 50%
+        left: 0
+        width: 12px
+        height: 2px
+        background-color: $line
+        &::before, &::after
+          content: ''
+          display: block
+          width: 18px
+          height: 2px
+          background-color: $line
+        &::before
+          transform: translateY(-6px)
+        &::after
+          transform: translateY(4px)
+    &__line
+      height: 100%
+      width: 1px
+      border-left: 1px solid $line
+      margin-left: 25px
+    &__search
+      background-image: url(../img/search.svg)
+      background-repeat: no-repeat
+      background-position: center left
+      border: none
+      height: 100%
+      padding-left: 30px
+      margin-left: 25px
+    &__subscribe
+      display: flex
+      align-items: center
+      height: 100%
+      margin-left: 10px
+      &-img
+        border-left: 3px solid #BCBFC2
+        border-top: 3px solid #BCBFC2
+        border-right: 3px solid #BCBFC2
+        margin-left: auto
+      &-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-right: 57px
+        &-title
+          font-size: 12px
+          line-height: 15px
+          font-style: normal
+          font-weight: bold
+        &-subtitle
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 15px
+          color: #939699 
+    &__sign-in
+      &-text
+        color: $dark-2
+        text-decoration: none
+
+
